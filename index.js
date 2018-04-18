@@ -19,3 +19,9 @@ function deleteFromObjectByKey(object, key) {
   delete o2[key];
   return(o2);
 }
+
+//returns object without the delete key/value pair
+function destructivelyDeleteFromObjectByKey(object, key) {
+  delete object[key];
+  return(object);
+}
