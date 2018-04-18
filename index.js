@@ -13,3 +13,8 @@ function updateObjectWithKeyAndValue(object, key, value) {
   return(object);
 }
 */
+
+function destructivelyUpdateObjectWithKeyAndValue(key,value) {
+  Object.assign({object},key,value);
+  return(object);
+}
